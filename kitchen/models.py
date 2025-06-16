@@ -10,12 +10,12 @@ class DishType(models.Model):
     class Meta:
         ordering = ("name", )
 
-    def str(self):
+    def __str__(self):
         return self.name
 
 
 class Cook(AbstractUser):
-    years_of_experience = models.IntegerField()
+    years_of_experience = models.IntegerField(default=0)
 
     class Meta:
         ordering = ("username", )
@@ -38,5 +38,5 @@ class Dish(models.Model):
     class Meta:
         ordering = ("name", )
 
-    def str(self):
+    def __str__(self):
         return f"{self.name} (price: {self.price}, type: {self.type}"
