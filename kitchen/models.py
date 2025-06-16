@@ -20,6 +20,9 @@ class Cook(AbstractUser):
     class Meta:
         ordering = ("username", )
 
+    def __str__(self):
+        return f"{self.username}: ({self.first_name} {self.last_name})"
+
 
 class Dish(models.Model):
     name = models.CharField(max_length=255)
@@ -37,6 +40,7 @@ class Dish(models.Model):
 
     class Meta:
         ordering = ("name", )
+        verbose_name_plural = "dishes"
 
     def __str__(self):
-        return f"{self.name} (price: {self.price}, type: {self.type}"
+        return f"{self.name} (price: {self.price}, type: {self.type})"
