@@ -24,6 +24,16 @@ class Cook(AbstractUser):
         return f"{self.username}: ({self.first_name} {self.last_name})"
 
 
+class Ingredient(models.Model):
+    name = models.CharField(max_length=63)
+
+    class Meta:
+        ordering = ("name", )
+
+    def __str__(self):
+        return self.name
+
+
 class Dish(models.Model):
     name = models.CharField(max_length=255)
     description = models.TextField()
@@ -37,6 +47,7 @@ class Dish(models.Model):
         settings.AUTH_USER_MODEL,
         related_name="dishes"
     )
+    ingredients = models.ManyToManyField(Ingredient, related_name="dishes")
 
     class Meta:
         ordering = ("name", )
