@@ -42,6 +42,7 @@ class CookCreationForm(UserCreationForm):
             "years_of_experience",
         )
 
+
 class CookSearchForm(forms.Form):
     username = forms.CharField(
         max_length=255,
@@ -56,8 +57,9 @@ class CookSearchForm(forms.Form):
 
 
 class CookExperienceUpdateForm(forms.ModelForm):
-    model = Cook
-    fields = ["years_of_experience", ]
+    class Meta:
+        model = Cook
+        fields = ["years_of_experience", ]
 
 
 class DishTypeSearchForm(forms.Form):
@@ -71,6 +73,7 @@ class DishTypeSearchForm(forms.Form):
             }
         )
     )
+
 
 class IngredientSearchForm(forms.Form):
     name = forms.CharField(
