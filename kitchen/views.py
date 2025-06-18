@@ -19,10 +19,12 @@ def index(request):
     num_cooks = Cook.objects.count()
     num_dishes = Dish.objects.count()
     num_dish_types = DishType.objects.count()
+    num_ingredients = Ingredient.objects.count()
     context = {
         "num_cooks": num_cooks,
         "num_dishes": num_dishes,
         "num_dish_types": num_dish_types,
+        "num_ingredients": num_ingredients
     }
     return render(request, "kitchen/index.html", context=context)
 
@@ -53,6 +55,7 @@ class DishTypeCreateView(LoginRequiredMixin, generic.CreateView):
     fields = "__all__"
     template_name = "kitchen/dish_type_form.html"
     success_url = reverse_lazy("kitchen:dish-type-list")
+    context_object_name = "dish_type"
 
 
 class DishTypeUpdateView(LoginRequiredMixin, generic.UpdateView):
@@ -60,12 +63,14 @@ class DishTypeUpdateView(LoginRequiredMixin, generic.UpdateView):
     fields = "__all__"
     template_name = "kitchen/dish_type_form.html"
     success_url = reverse_lazy("kitchen:dish-type-list")
+    context_object_name = "dish_type"
 
 
 class DishTypeDeleteView(LoginRequiredMixin, generic.DeleteView):
     model = DishType
     template_name = "kitchen/dish_type_confirm_delete.html"
     success_url = reverse_lazy("kitchen:dish-type-list")
+    context_object_name = "dish_type"
 
 
 class DishListView(LoginRequiredMixin, generic.ListView):
