@@ -1,11 +1,70 @@
-{% extends "base.html" %}
+{% extends "layouts/base-presentation.html" %}
+{% load crispy_forms_filters %}
 
+{% block title %} Cook {% endblock title %}
+
+{% block navigation %}
+  {% include "includes/navigation.html" %}
+{% endblock %}
 {% block content %}
-  <h1>Delete cook?</h1>
-  <p>Are you sure you want to delete the cook: {{ cook }}</p>
-  <form action="" method="post">
-    {% csrf_token %}
+  <header class="header-2">
+    <div class="page-header section-height-50 relative"
+         style="background-image: url('{{ ASSETS_ROOT }}/img/cook-list2.jpg')">
+      <div class="position-absolute w-100 z-index-1 bottom-0">
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+             viewBox="0 24 150 40" preserveAspectRatio="none" shape-rendering="auto">
+          <defs>
+            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"/>
+          </defs>
+          <g class="moving-waves">
+            <use xlink:href="#gentle-wave" x="48" y="-1" fill="rgba(255,255,255,0.40"/>
+            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.35)"/>
+            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.25)"/>
+            <use xlink:href="#gentle-wave" x="48" y="8" fill="rgba(255,255,255,0.20)"/>
+            <use xlink:href="#gentle-wave" x="48" y="13" fill="rgba(255,255,255,0.15)"/>
+            <use xlink:href="#gentle-wave" x="48" y="16" fill="rgba(255,255,255,0.95"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </header>
+  <section class="pt-2 pb-5" id="count-stats">
+    <div class="container">
+      <div class="row">
+        <div class="z-index-2 border-radius-xl mt-n12 mx-auto py-3 blur shadow-blur">
+          <div class="row">
+            <div class="position-relative">
+              <div class="text-center">
+                <h1>Delete cook?</h1>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="position-relative">
+              <div class="text-center text-dark mb-5">
+                <strong>Are you sure you want to delete the cook: {{ cook.username }}?</strong>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="position-relative col-md-6">
+              <div class="text-right">
+                <form action="" method="post">
+                  {% csrf_token %}
 
-    <input type="submit" value="Yes, delete" class="btn btn-danger">
-  </form>
+                  <input type="submit" value="Yes, delete" class="btn btn-lg btn-danger mb-md-1">
+                </form>
+              </div>
+            </div>
+            <div class="position-relative col-md-6">
+              <div class="text-left">
+                <a class="btn btn-lg btn-secondary mb-md-1"
+                   href="{% url 'kitchen:cook-detail' pk=cook.id %}">Cancel</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 {% endblock %}

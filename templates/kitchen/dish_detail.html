@@ -1,24 +1,91 @@
-{% extends "base.html" %}
+{% extends "layouts/base-presentation.html" %}
+{% load crispy_forms_filters %}
 
+{% block title %} Dish {% endblock title %}
+
+{% block navigation %}
+  {% include "includes/navigation.html" %}
+{% endblock %}
 {% block content %}
-  <h1>
-    {{ dish.name }}
-    <a href="{% url 'kitchen:dish-delete' pk=dish.id %}" class="btn btn-danger link-to-page">
-      Delete
-    </a>
-
-    <a href="{% url 'kitchen:dish-update' pk=dish.id %}" class="btn btn-secondary link-to-page">
-      Update
-    </a>
-  </h1>
-  <p>Dish type: {{ dish.type.name }}</p>
-  <h1>
-    Cooks
-  </h1>
-  <hr>
-  <ul>
-    {% for cook in dish.cooks.all %}
-      <li>{{ cook.username }} ({{ cook.first_name }} {{ cook.last_name }})</li>
-    {% endfor %}
-  </ul>
+  <header class="header-2">
+    <div class="page-header section-height-50 relative"
+         style="background-image: url('{{ ASSETS_ROOT }}/img/dish-list.jpg')">
+      <div class="position-absolute w-100 z-index-1 bottom-0">
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+             viewBox="0 24 150 40" preserveAspectRatio="none" shape-rendering="auto">
+          <defs>
+            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"/>
+          </defs>
+          <g class="moving-waves">
+            <use xlink:href="#gentle-wave" x="48" y="-1" fill="rgba(255,255,255,0.40"/>
+            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.35)"/>
+            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.25)"/>
+            <use xlink:href="#gentle-wave" x="48" y="8" fill="rgba(255,255,255,0.20)"/>
+            <use xlink:href="#gentle-wave" x="48" y="13" fill="rgba(255,255,255,0.15)"/>
+            <use xlink:href="#gentle-wave" x="48" y="16" fill="rgba(255,255,255,0.95"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </header>
+  <section class="pt-2 pb-5" id="count-stats">
+    <div class="container">
+      <div class="row">
+        <div class="z-index-2 border-radius-xl mt-n12 mx-auto py-3 blur shadow-blur">
+          <div class="row p-2">
+            <div class="position-relative col-md-9">
+              <div class="m-0 text-lighter mt-n2">
+                <h1>
+                  {{ dish.name }}
+                </h1>
+              </div>
+            </div>
+            <div class="position-relative col-md-1 ms-6">
+              <a href="{% url 'kitchen:dish-update' pk=dish.id %}"
+                 class="btn btn-outline-secondary btn-round link-to-page mb-md-1">
+                Update
+              </a>
+            </div>
+            <div class="position-relative col-md-1">
+              <a href="{% url 'kitchen:dish-delete' pk=dish.id %}"
+                 class="btn btn-outline-warning btn-round link-to-page mb-md-1">
+                Delete
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="position-relative">
+              <div class="ms-4 text-dark">
+                <p><strong>Dish type:</strong> {{ dish.type.name }}</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="position-relative col-md-6">
+              <div class="ms-6 text-lighter">
+                <h4>Ingredients</h4>
+                <hr>
+                <ul>
+                  {% for ingredient in dish.ingredients.all %}
+                    <li>{{ ingredient.name }}</li>
+                  {% endfor %}
+                </ul>
+              </div>
+            </div>
+            <div class="position-relative col-md-6">
+              <div class="ms-6 text-lighter">
+                <h4>Cooks</h4>
+                <hr>
+                <ul>
+                  {% for cook in dish.cooks.all %}
+                    <li>{{ cook.username }} ({{ cook.first_name }} {{ cook.last_name }})</li>
+                  {% endfor %}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 {% endblock %}
