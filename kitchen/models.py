@@ -2,7 +2,7 @@ from django.contrib.auth.models import AbstractUser
 from django.db import models
 from django.urls import reverse
 
-from kitchen_service import settings
+from kitchen_service.settings import base
 
 
 class DishType(models.Model):
@@ -48,7 +48,7 @@ class Dish(models.Model):
         related_name="dishes"
     )
     cooks = models.ManyToManyField(
-        settings.AUTH_USER_MODEL,
+        base.AUTH_USER_MODEL,
         related_name="dishes"
     )
     ingredients = models.ManyToManyField(Ingredient, related_name="dishes")
