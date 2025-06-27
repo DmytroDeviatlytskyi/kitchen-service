@@ -16,6 +16,10 @@ pip install -r requirements.txt
 python manage.py runserver
 ```
 
+Test User:
+  - Login: `user`
+  - Password: `user12345`
+
 
 ## Features
 
