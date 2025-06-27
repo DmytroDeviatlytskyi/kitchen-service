@@ -1,0 +1,1283 @@
+[
+{
+    "model": "kitchen.dishtype",
+    "pk": 1,
+    "fields": {
+        "name": "Pizza"
+    }
+},
+{
+    "model": "kitchen.dishtype",
+    "pk": 2,
+    "fields": {
+        "name": "Pasta"
+    }
+},
+{
+    "model": "kitchen.dishtype",
+    "pk": 3,
+    "fields": {
+        "name": "Cakes"
+    }
+},
+{
+    "model": "kitchen.dishtype",
+    "pk": 4,
+    "fields": {
+        "name": "Desserts"
+    }
+},
+{
+    "model": "kitchen.dishtype",
+    "pk": 5,
+    "fields": {
+        "name": "Grilled"
+    }
+},
+{
+    "model": "kitchen.dishtype",
+    "pk": 6,
+    "fields": {
+        "name": "Salad"
+    }
+},
+{
+    "model": "kitchen.dishtype",
+    "pk": 7,
+    "fields": {
+        "name": "Curries"
+    }
+},
+{
+    "model": "kitchen.dishtype",
+    "pk": 8,
+    "fields": {
+        "name": "Bread"
+    }
+},
+{
+    "model": "kitchen.dishtype",
+    "pk": 9,
+    "fields": {
+        "name": "Braai"
+    }
+},
+{
+    "model": "kitchen.dishtype",
+    "pk": 10,
+    "fields": {
+        "name": "Biscuits"
+    }
+},
+{
+    "model": "kitchen.cook",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$1000000$hW4kFioF4a9ZsBHrIgrEGF$vd0gEkqYQKwzERCmfUXvT5EjPyPGPjbvs/yBm6MK/0A=",
+        "last_login": "2025-06-27T16:23:31.873Z",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "Robert",
+        "last_name": "",
+        "email": "admin@admin.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2025-06-27T14:52:54.881Z",
+        "years_of_experience": 12,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "kitchen.cook",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$1000000$RHyGbQecIhIqJ2FZjgZlML$hVifss0gtEdGoP/+wz6Ul7eAX9i23k3fBnDGRCr6HB0=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "arthur_t",
+        "first_name": "Arthur",
+        "last_name": "Tyler",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2025-06-26T16:32:20.296Z",
+        "years_of_experience": 8,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "kitchen.cook",
+    "pk": 3,
+    "fields": {
+        "password": "pbkdf2_sha256$1000000$aLb3jJ4tMvrU8vtcSkDohh$zkI4yzJT3pQT7yPhBpnT/X1Z/k1x7vDxNp9DsZf36wY=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "george_mill",
+        "first_name": "George",
+        "last_name": "Anthony Miller",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2025-06-26T16:33:42.581Z",
+        "years_of_experience": 3,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "kitchen.cook",
+    "pk": 4,
+    "fields": {
+        "password": "pbkdf2_sha256$1000000$IswrLWECr4GgTU8JdZ7Yux$jPFZmEuHm4KKFGQoy6qSYkyIe6J76P52aZF7rcNup2w=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "hill_1607",
+        "first_name": "Dana",
+        "last_name": "Hill",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2025-06-26T16:34:58.428Z",
+        "years_of_experience": 1,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "kitchen.cook",
+    "pk": 5,
+    "fields": {
+        "password": "pbkdf2_sha256$1000000$BgXfTf4bDcV4LtYFF3Lkxd$Fyhiloc25Ai7fSXiJLKP/wn3l/7YfUgUuppOJ3zBkbY=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "jenny_ferg",
+        "first_name": "Jennifer",
+        "last_name": "Ferguson",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2025-06-26T16:36:21.074Z",
+        "years_of_experience": 4,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "kitchen.cook",
+    "pk": 6,
+    "fields": {
+        "password": "pbkdf2_sha256$1000000$4UqaQd3r8ZrMGVTQh73A4M$h05UZu3yu6VDDdrS7jC4zl2WOpszslFw14HKcln65ts=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "rodri_142",
+        "first_name": "Lois",
+        "last_name": "Rodriguez",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2025-06-26T16:38:02.766Z",
+        "years_of_experience": 5,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "kitchen.cook",
+    "pk": 7,
+    "fields": {
+        "password": "pbkdf2_sha256$1000000$LxohmVrBaUJlfrS6Q5LkpR$puZ/robt1MVdu5WP6TeUIAT8cfWQNyXo5YzhQF/d9Sg=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "jen_garcia",
+        "first_name": "Jennifer",
+        "last_name": "Garcia",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2025-06-26T16:38:48.922Z",
+        "years_of_experience": 4,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "kitchen.cook",
+    "pk": 8,
+    "fields": {
+        "password": "pbkdf2_sha256$1000000$EFWTuwIgYRlYhRUsFS3AHf$8R2T5Am+WEjuJoGfqq1aMRaF5hwu5NuRuJ9EILpBQvY=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "john_563",
+        "first_name": "John",
+        "last_name": "Arnold",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2025-06-26T16:39:58.384Z",
+        "years_of_experience": 14,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "kitchen.cook",
+    "pk": 9,
+    "fields": {
+        "password": "pbkdf2_sha256$1000000$q7zCrKWt6LrUenYQJHng32$c/BifZkwT+qKWY7u6p0L/gimeQmG4WRLNl3yZnHeMcM=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "kenneth_66",
+        "first_name": "Kenneth",
+        "last_name": "Henry",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2025-06-26T16:41:19.331Z",
+        "years_of_experience": 2,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "kitchen.cook",
+    "pk": 10,
+    "fields": {
+        "password": "pbkdf2_sha256$1000000$aaO2vbgtVArfJL6Aypr4Ry$j0KbKl0r9zxji0kJkTYP3VpugQQq9wqzw2UAISdD9VA=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "joe-fergus2",
+        "first_name": "Joe",
+        "last_name": "Ferguson",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2025-06-26T16:42:24.915Z",
+        "years_of_experience": 1,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "kitchen.cook",
+    "pk": 11,
+    "fields": {
+        "password": "pbkdf2_sha256$1000000$Z0LjOxZRay234QzgosGXfB$gjOEh4MjtYRQr9dQWusjsoDHjv6ZJFTbrqv8TqWBE+M=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "white-4",
+        "first_name": "Bobbie",
+        "last_name": "White",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2025-06-26T16:43:36.806Z",
+        "years_of_experience": 1,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "kitchen.cook",
+    "pk": 12,
+    "fields": {
+        "password": "pbkdf2_sha256$1000000$G4MEfUPx0gellcwpUdik95$9cOQWCGVZho8kSzE1So22GGl8AQoY7Jt2lH7nnVxGsg=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "wouq-",
+        "first_name": "Daniil",
+        "last_name": "Deviatlytskyi",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2025-06-27T13:18:39.444Z",
+        "years_of_experience": 5,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "kitchen.cook",
+    "pk": 14,
+    "fields": {
+        "password": "pbkdf2_sha256$1000000$bj7eP3cZB2Be5YQa3FBDT7$VouVJ4dh6ulWfse5C48rsyoZlzOxh3KwWPOEMvLrQ3E=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "user",
+        "first_name": "Test_first_name",
+        "last_name": "Test_last_name",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2025-06-27T16:24:41.874Z",
+        "years_of_experience": 0,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 2,
+    "fields": {
+        "name": "Anchovies"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 3,
+    "fields": {
+        "name": "Basil"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 4,
+    "fields": {
+        "name": "Bell pepper"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 5,
+    "fields": {
+        "name": "Biscuit base"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 6,
+    "fields": {
+        "name": "Black pepper"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 7,
+    "fields": {
+        "name": "Brown sugar"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 8,
+    "fields": {
+        "name": "Butter"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 9,
+    "fields": {
+        "name": "Caesar dressing"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 10,
+    "fields": {
+        "name": "Chicken"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 11,
+    "fields": {
+        "name": "Chicken breast"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 12,
+    "fields": {
+        "name": "Cocoa"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 13,
+    "fields": {
+        "name": "Coconut milk"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 14,
+    "fields": {
+        "name": "Coffee"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 15,
+    "fields": {
+        "name": "Croutons"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 16,
+    "fields": {
+        "name": "Cream"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 17,
+    "fields": {
+        "name": "Cream cheese"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 18,
+    "fields": {
+        "name": "Cucumbers"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 19,
+    "fields": {
+        "name": "Dough"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 20,
+    "fields": {
+        "name": "Eggs"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 21,
+    "fields": {
+        "name": "Feta cheese"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 22,
+    "fields": {
+        "name": "Flour"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 23,
+    "fields": {
+        "name": "Garlic"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 24,
+    "fields": {
+        "name": "Garlic powder"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 25,
+    "fields": {
+        "name": "Garam masala"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 26,
+    "fields": {
+        "name": "Gelatin"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 27,
+    "fields": {
+        "name": "Green curry paste"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 28,
+    "fields": {
+        "name": "Ketchup"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 29,
+    "fields": {
+        "name": "Kalamata olives"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 30,
+    "fields": {
+        "name": "Ladyfingers"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 31,
+    "fields": {
+        "name": "Lemon"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 32,
+    "fields": {
+        "name": "Linguine"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 33,
+    "fields": {
+        "name": "Mascarpone"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 34,
+    "fields": {
+        "name": "Mozzarella"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 35,
+    "fields": {
+        "name": "Olive oil"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 36,
+    "fields": {
+        "name": "Oregano"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 37,
+    "fields": {
+        "name": "Paprika"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 38,
+    "fields": {
+        "name": "Parmesan"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 39,
+    "fields": {
+        "name": "Pasta"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 40,
+    "fields": {
+        "name": "Peppers"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 41,
+    "fields": {
+        "name": "Pepperoni"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 42,
+    "fields": {
+        "name": "Pine nuts"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 43,
+    "fields": {
+        "name": "Pork ribs"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 44,
+    "fields": {
+        "name": "Pesto sauce"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 45,
+    "fields": {
+        "name": "Red onion"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 46,
+    "fields": {
+        "name": "Romaine lettuce"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 47,
+    "fields": {
+        "name": "Rosemary"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 48,
+    "fields": {
+        "name": "Salt"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 49,
+    "fields": {
+        "name": "Savory spices"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 50,
+    "fields": {
+        "name": "Savoyaрdi"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 51,
+    "fields": {
+        "name": "Spaghetti"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 52,
+    "fields": {
+        "name": "Sugar"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 53,
+    "fields": {
+        "name": "Tomato sauce"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 54,
+    "fields": {
+        "name": "Tomatoes"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 55,
+    "fields": {
+        "name": "Vanilla"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 56,
+    "fields": {
+        "name": "Yogurt"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 57,
+    "fields": {
+        "name": "Zucchini"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 58,
+    "fields": {
+        "name": "All-purpose flour"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 59,
+    "fields": {
+        "name": "Baking powder"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 60,
+    "fields": {
+        "name": "Baking soda"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 61,
+    "fields": {
+        "name": "Beef"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 62,
+    "fields": {
+        "name": "Bread flour"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 63,
+    "fields": {
+        "name": "Buttermilk"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 64,
+    "fields": {
+        "name": "Cheddar cheese"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 65,
+    "fields": {
+        "name": "Chives"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 66,
+    "fields": {
+        "name": "Cloves"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 67,
+    "fields": {
+        "name": "Coriander seeds"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 68,
+    "fields": {
+        "name": "Ghee"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 69,
+    "fields": {
+        "name": "Lamb chops"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 70,
+    "fields": {
+        "name": "Lemon juice"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 71,
+    "fields": {
+        "name": "Nutmeg"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 72,
+    "fields": {
+        "name": "Parsley"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 73,
+    "fields": {
+        "name": "Pork fat"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 74,
+    "fields": {
+        "name": "Sourdough starter"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 75,
+    "fields": {
+        "name": "Thyme"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 76,
+    "fields": {
+        "name": "Vinegar"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 77,
+    "fields": {
+        "name": "Bacon"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 78,
+    "fields": {
+        "name": "Cocoa powder"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 79,
+    "fields": {
+        "name": "Berry sauce"
+    }
+},
+{
+    "model": "kitchen.ingredient",
+    "pk": 80,
+    "fields": {
+        "name": "BBQ sauce"
+    }
+},
+{
+    "model": "kitchen.dish",
+    "pk": 1,
+    "fields": {
+        "name": "Margherita",
+        "description": "Classic Italian pizza with tomato sauce and mozzarella cheese.",
+        "price": "5.00",
+        "type": 1,
+        "cooks": [
+            1
+        ],
+        "ingredients": [
+            3,
+            19,
+            34,
+            35,
+            53
+        ]
+    }
+},
+{
+    "model": "kitchen.dish",
+    "pk": 2,
+    "fields": {
+        "name": "Pepperoni",
+        "description": "Spicy pepperoni pizza with melted mozzarella.",
+        "price": "6.00",
+        "type": 1,
+        "cooks": [
+            1
+        ],
+        "ingredients": [
+            19,
+            34,
+            36,
+            41,
+            53
+        ]
+    }
+},
+{
+    "model": "kitchen.dish",
+    "pk": 3,
+    "fields": {
+        "name": "Carbonara",
+        "description": "Creamy spaghetti with bacon and parmesan cheese.",
+        "price": "5.50",
+        "type": 2,
+        "cooks": [
+            2,
+            5
+        ],
+        "ingredients": [
+            77,
+            6,
+            20,
+            38,
+            51
+        ]
+    }
+},
+{
+    "model": "kitchen.dish",
+    "pk": 4,
+    "fields": {
+        "name": "Pesto Linguine",
+        "description": "Light pasta with pesto sauce and pine nuts.",
+        "price": "5.80",
+        "type": 2,
+        "cooks": [
+            2,
+            5
+        ],
+        "ingredients": [
+            32,
+            35,
+            38,
+            44,
+            42
+        ]
+    }
+},
+{
+    "model": "kitchen.dish",
+    "pk": 5,
+    "fields": {
+        "name": "Chocolate Fudge Cake",
+        "description": "Rich chocolate cake with soft cream layers.",
+        "price": "4.10",
+        "type": 3,
+        "cooks": [
+            3,
+            6
+        ],
+        "ingredients": [
+            8,
+            12,
+            20,
+            22,
+            52
+        ]
+    }
+},
+{
+    "model": "kitchen.dish",
+    "pk": 6,
+    "fields": {
+        "name": "New York Cheesecake",
+        "description": "Creamy cheesecake on a crunchy biscuit base.",
+        "price": "4.30",
+        "type": 3,
+        "cooks": [
+            3,
+            6
+        ],
+        "ingredients": [
+            5,
+            16,
+            17,
+            20,
+            52
+        ]
+    }
+},
+{
+    "model": "kitchen.dish",
+    "pk": 7,
+    "fields": {
+        "name": "Tiramisu",
+        "description": "Italian dessert with mascarpone cream and coffee.",
+        "price": "4.70",
+        "type": 4,
+        "cooks": [
+            4,
+            10
+        ],
+        "ingredients": [
+            78,
+            14,
+            20,
+            30,
+            33
+        ]
+    }
+},
+{
+    "model": "kitchen.dish",
+    "pk": 8,
+    "fields": {
+        "name": "Panna Cotta",
+        "description": "Creamy vanilla dessert with berry sauce.",
+        "price": "4.50",
+        "type": 4,
+        "cooks": [
+            4,
+            10
+        ],
+        "ingredients": [
+            79,
+            16,
+            26,
+            52,
+            55
+        ]
+    }
+},
+{
+    "model": "kitchen.dish",
+    "pk": 9,
+    "fields": {
+        "name": "Grilled Chicken Breast",
+        "description": "Tender chicken breast grilled to perfection with herbs.",
+        "price": "7.50",
+        "type": 5,
+        "cooks": [
+            12
+        ],
+        "ingredients": [
+            11,
+            23,
+            31,
+            35,
+            47
+        ]
+    }
+},
+{
+    "model": "kitchen.dish",
+    "pk": 10,
+    "fields": {
+        "name": "BBQ Ribs",
+        "description": "Juicy pork ribs glazed with smoky barbecue sauce.",
+        "price": "9.00",
+        "type": 5,
+        "cooks": [
+            12
+        ],
+        "ingredients": [
+            80,
+            7,
+            24,
+            37,
+            43
+        ]
+    }
+},
+{
+    "model": "kitchen.dish",
+    "pk": 11,
+    "fields": {
+        "name": "Caesar Salad",
+        "description": "Crisp romaine with Caesar dressing, croutons, and parmesan.",
+        "price": "4.90",
+        "type": 6,
+        "cooks": [
+            4,
+            7
+        ],
+        "ingredients": [
+            2,
+            9,
+            15,
+            38,
+            46
+        ]
+    }
+},
+{
+    "model": "kitchen.dish",
+    "pk": 12,
+    "fields": {
+        "name": "Greek Salad",
+        "description": "Fresh mix of tomatoes, cucumber, olives, and feta.",
+        "price": "4.60",
+        "type": 6,
+        "cooks": [
+            4,
+            7
+        ],
+        "ingredients": [
+            18,
+            21,
+            29,
+            35,
+            45,
+            54
+        ]
+    }
+},
+{
+    "model": "kitchen.dish",
+    "pk": 13,
+    "fields": {
+        "name": "Chicken Tikka Masala",
+        "description": "Marinated chicken in creamy tomato curry sauce.",
+        "price": "8.20",
+        "type": 7,
+        "cooks": [
+            9
+        ],
+        "ingredients": [
+            10,
+            16,
+            25,
+            53,
+            56
+        ]
+    }
+},
+{
+    "model": "kitchen.dish",
+    "pk": 14,
+    "fields": {
+        "name": "Vegetable Thai Green Curry",
+        "description": "Thai-style curry with coconut milk and seasonal vegetables.",
+        "price": "7.00",
+        "type": 7,
+        "cooks": [
+            9
+        ],
+        "ingredients": [
+            3,
+            4,
+            13,
+            27,
+            57
+        ]
+    }
+},
+{
+    "model": "kitchen.dish",
+    "pk": 15,
+    "fields": {
+        "name": "Buttermilk Biscuits",
+        "description": "Fluffy and buttery Southern-style biscuits.",
+        "price": "2.50",
+        "type": 10,
+        "cooks": [
+            11
+        ],
+        "ingredients": [
+            58,
+            59,
+            60,
+            8,
+            63,
+            48
+        ]
+    }
+},
+{
+    "model": "kitchen.dish",
+    "pk": 16,
+    "fields": {
+        "name": "Cheddar Herb Biscuits",
+        "description": "Savory biscuits with sharp cheddar and fresh herbs.",
+        "price": "3.00",
+        "type": 10,
+        "cooks": [
+            11
+        ],
+        "ingredients": [
+            58,
+            59,
+            8,
+            64,
+            65,
+            72
+        ]
+    }
+},
+{
+    "model": "kitchen.dish",
+    "pk": 17,
+    "fields": {
+        "name": "Boerewors Sausage",
+        "description": "Traditional South African spiced beef sausage.",
+        "price": "6.80",
+        "type": 9,
+        "cooks": [
+            8
+        ],
+        "ingredients": [
+            61,
+            66,
+            67,
+            71,
+            73,
+            76
+        ]
+    }
+},
+{
+    "model": "kitchen.dish",
+    "pk": 18,
+    "fields": {
+        "name": "Lamb Chops Braai",
+        "description": "Marinated lamb chops grilled over open flame.",
+        "price": "9.50",
+        "type": 9,
+        "cooks": [
+            8
+        ],
+        "ingredients": [
+            23,
+            69,
+            70,
+            35,
+            47,
+            75
+        ]
+    }
+},
+{
+    "model": "kitchen.dish",
+    "pk": 19,
+    "fields": {
+        "name": "Sourdough Loaf",
+        "description": "Crusty artisan bread with a tangy flavor.",
+        "price": "4.00",
+        "type": 8,
+        "cooks": [
+            11
+        ],
+        "ingredients": [
+            62,
+            48,
+            74
+        ]
+    }
+},
+{
+    "model": "kitchen.dish",
+    "pk": 20,
+    "fields": {
+        "name": "Garlic Naan",
+        "description": "Soft Indian flatbread brushed with garlic butter.",
+        "price": "3.50",
+        "type": 8,
+        "cooks": [
+            11
+        ],
+        "ingredients": [
+            58,
+            59,
+            23,
+            68,
+            56
+        ]
+    }
+}
+]
