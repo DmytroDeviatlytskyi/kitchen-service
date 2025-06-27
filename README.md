@@ -2,6 +2,14 @@
 
 Django project for managing dishes and cooks in Restaurant Kitchen
 
+## Check it out!
+
+[Restaurant kitchen project deployed to Render](https://kitchen-service-li3e.onrender.com/)
+
+Test User:
+  - Login: `user`
+  - Password: `user12345`
+
 ## Installation 
 
 Python3 must be already installed
@@ -15,11 +23,6 @@ source venv/Scripts/activate
 pip install -r requirements.txt
 python manage.py runserver
 ```
-
-Test User:
-  - Login: `user`
-  - Password: `user12345`
-
 
 ## Features
 
